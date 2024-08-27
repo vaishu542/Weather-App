@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+body{
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 2%, rgba(148, 185, 233, 0.9752275910364145) 44%, rgba(148, 185, 233, 1) 49%, rgba(148, 185, 233, 0.9752275910364145) 117%);
+}
+.cardFace {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    color: #f1edd6;
+}
+
+.card {
+    background-color: rgb(115, 185, 247);
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    max-width: 500px;
+    height: max-content;
+    margin: 70px;
+    border-radius: 15px;
+    padding: 20px 20px 20px 10px;
+    text-align: center;
+}
+
+.search {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.search input {
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 30px;
+    border: 0px;
+    height: 10px;
+    width: 240px;
+    background-color: #e2f7f0;
+    padding: 20px;
+}
+
+input:focus {
+    outline: 0;
+}
+
+.search button {
+    border-radius: 50%;
+    background-color: #ebfffc;
+    height: 42px;
+    width: 42px;
+    cursor: pointer;
+    border: 1px;
+}
+
+.search button img {
+    width: 19px;
+    height: 19px;
+    background-color: #eefaf6;
+
+}
+
+.col {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px;
+}
+
+.col img {
+    width: 40px;
+    height: 40px;
+    margin: auto0;
+}
+
+.col p {
+    font-size: 1.1rem;
+    margin: 0px;
+}
+
+.weather {
+    display: none;
+}
+
+.error {
+    display: none;
+    font-size: 1.3rem;
+    color: rgb(241, 11, 11);
+}
+
+@media screen and (max-width: 810px) {
+    body {
+        background: rgb(238, 174, 202);
+        background: radial-gradient(circle, rgba(238, 174, 202, 1) 16%, rgba(148, 185, 233, 1) 60%, rgba(148, 185, 233, 0.9752275910364145) 63%, rgba(148, 185, 233, 1) 69%, rgba(148, 185, 233, 0.9752275910364145) 117%);
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .card {
+        max-width: 350px;
+    }
+}
